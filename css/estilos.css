@@ -1,0 +1,71 @@
+html{
+	font-size: 62.5%; /*RESTEAR LOS REM  1 REM : 10 PX*/
+}
+body{
+	font-size: 1.6rem;
+	font-family: 'Lato', sans-serif;
+}
+
+/* GLOBALES */
+img {
+	max-width: 100%;
+}
+h1 {
+	font-size: 4.0rem;
+}
+h2{
+	font-size: 3.4rem;
+}
+h3{
+	font-size: 2.8rem;
+}
+.producto{min-width:50%;}
+/* UTILIDADES */
+.Just-Text{text-align: justify; padding-top:1rem;}
+.CentrarTexto{text-align: center;}
+.Mayusculas{text-transform: uppercase ;}
+.Bordes{border-radius: 80px 10px 80px 0px;}
+.margin{max-width:90%;margin:auto;}
+.space{margin-bottom: 4rem;}
+.flex{
+	display: flex;
+	 justify-items:center;
+	 justify-content: space-between;
+	 flex-direction:column;
+	}
+.box{max-width:80%;margin:auto;}
+
+/* HEADER */
+.cabeza-pagina{
+	background: #222222;
+	text-align: center;
+	padding: 1rem;
+}
+.navegacion a{
+	color: white;
+	text-decoration: none;
+	display: block;
+	line-height: 2;
+}
+.navegacion a:hover{background-color: rgb(87, 78, 78);}
+
+/* RESPONSIVE */
+
+@media(min-width:780px){
+	.navegacion{display: flex;}
+	.navegacion a{flex-basis: 80%;}
+	.padre{
+		display: flex;
+		justify-content: space-between;
+		justify-items:center;}
+	.info-principal{flex-basis: calc(70% - 20px);}
+	.barra-lateral{flex-basis:calc(30% - 20px);}
+	.flex{flex-direction: row;}
+}
+/* FOOTER */
+.pie-pagina{
+	background: #222222;
+	color: white;
+	
+	padding: 1rem;
+}
