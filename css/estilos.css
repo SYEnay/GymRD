@@ -20,12 +20,14 @@ h3{
 	font-size: 2.8rem;
 }
 .producto{min-width:50%;}
+.producto:hover {transition:1s;opacity:.7;}
 /* UTILIDADES */
 .Just-Text{text-align: justify; padding-top:1rem;}
+.cen-Text{text-align: center; padding-top:1rem;}
 .CentrarTexto{text-align: center;}
 .Mayusculas{text-transform: uppercase ;}
 .Bordes{border-radius: 80px 10px 80px 0px;}
-.margin{max-width:90%;margin:auto;}
+.margin{max-width:90%;margin:1rem auto auto auto;}
 .space{margin-bottom: 4rem;}
 .flex{
 	display: flex;
@@ -40,6 +42,7 @@ h3{
 	background: #222222;
 	text-align: center;
 	padding: 1rem;
+
 }
 .navegacion a{
 	color: white;
@@ -52,15 +55,29 @@ h3{
 /* RESPONSIVE */
 
 @media(min-width:780px){
+	.cabeza-pagina{
+		display: flex;
+		justify-items: center;
+		justify-content: space-between;
+	}
+	.logo{flex-basis: 30%;}
+	.navegacion{flex-basis: 70%; margin:auto}
 	.navegacion{display: flex;}
 	.navegacion a{flex-basis: 80%;}
 	.padre{
-		display: flex;
+		display: block;
 		justify-content: space-between;
-		justify-items:center;}
+		}
 	.info-principal{flex-basis: calc(70% - 20px);}
-	.barra-lateral{flex-basis:calc(30% - 20px);}
+	.barra-lateral{
+		flex-basis:calc(30% - 20px);
+		display: flex;}
 	.flex{flex-direction: row;}
+}
+@media(min-width:1000px){
+	.padre{
+		display: flex;}
+	.barra-lateral{display:block;}
 }
 /* FOOTER */
 .pie-pagina{
